@@ -1,0 +1,23 @@
+//npm install react-colorful
+import { HexColorPicker } from "react-colorful";
+
+const YourComponent = () => {
+const [color, setColor] = useState("#aabbcc");
+return <HexColorPicker color={color} onChange={setColor} />;
+};
+.your-component .react-colorful {
+height: 240px;
+}
+.your-component .react-colorful__saturation {
+border-radius: 4px 4px 0 0;
+}
+.your-component .react-colorful__hue {
+height: 40px;
+border-radius: 0 0 4px 4px;
+}
+.your-component .react-colorful__hue-pointer {
+width: 12px;
+height: inherit;
+border-radius: 0;
+}
+//help https://www.npmjs.com/package/react-colorful
